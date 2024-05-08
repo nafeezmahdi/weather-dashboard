@@ -42,7 +42,7 @@ export default function useWeather() {
 
       const data = await response.json();
 
-      const updatedWeather = {
+      const updatedWeatherData = {
         ...weatherData,
         location: data?.name,
         climate: data?.weather[0]?.main,
@@ -57,7 +57,7 @@ export default function useWeather() {
         latitude: latitude,
       };
 
-      setWeatherData(updatedWeather);
+      setWeatherData(updatedWeatherData);
     } catch (err) {
       setError(err);
     } finally {
