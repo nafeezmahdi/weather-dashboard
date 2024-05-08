@@ -1,9 +1,8 @@
 import { useContext } from "react";
-
 import PinIcon from "../../assets/pin.svg";
-import { WeatherContext } from "../../context/contextIndex";
-import { getFormattedDayInfo } from "../../utils/getFormattedDayInfo";
-import { getWeatherIcon } from "../../utils/getWeatherIcon";
+import { WeatherContext } from "../../context/contextIndex.js";
+import { getFormattedDayInfo } from "../../utils/getFormattedDayInfo.js";
+import { getWeatherIcon } from "../../utils/getWeatherIcon.js";
 
 export default function WeatherHeadline() {
   const { weatherData } = useContext(WeatherContext);

@@ -1,3 +1,3 @@
-import useWeather from "./useWeather";
+import useWeather from "./useWeather.js";
 
 export { useWeather };

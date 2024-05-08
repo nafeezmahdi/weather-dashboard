@@ -1,3 +1,3 @@
-import WeatherProvider from "./WeatherProvider";
+import WeatherProvider from "./WeatherProvider.jsx";
 
 export { WeatherProvider };

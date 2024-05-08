@@ -72,7 +72,7 @@ export default function useWeather() {
   useEffect(() => {
     setLoading({
       state: true,
-      message: "Fetching Weather Data...",
+      message: "Fetching Weather Data...!",
     });
 
     navigator.geolocation.getCurrentPosition(function (position) {
