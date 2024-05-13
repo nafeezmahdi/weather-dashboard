@@ -75,10 +75,11 @@ export default function useWeather() {
       state: true,
       message: "Fetching Weather Data...!",
     });
-
-    navigator.geolocation.getCurrentPosition(function (position) {
-      fetchWeatherData(position.coords.latitude, position.coords.longitude);
-    });
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        fetchWeatherData(position.coords.latitude, position.coords.longitude);
+      });
+    }
   }, []);
 
   return {

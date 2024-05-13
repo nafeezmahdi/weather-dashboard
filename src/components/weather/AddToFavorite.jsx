@@ -37,7 +37,10 @@ export default function AddToFavorite() {
           onClick={handleFavourites}
         >
           <span>Add to Favorite</span>
-          <img src={isFavourite ? RedHeartIcon : HeartIcon} alt="" />
+          <img
+            src={isFavourite ? RedHeartIcon : HeartIcon}
+            alt="Favorite Icon"
+          />
         </button>
       </div>
     </div>
