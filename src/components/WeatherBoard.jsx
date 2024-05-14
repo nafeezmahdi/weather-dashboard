@@ -15,6 +15,7 @@ export default function WeatherBoard() {
             <p>{loading.message}</p>
           ) : (
             <>
+              {/*  */}
               <AddToFavorite />
               <WeatherHeadline />
               <WeatherCondition />
