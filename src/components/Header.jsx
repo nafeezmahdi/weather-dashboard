@@ -7,9 +7,9 @@ import SearchLocation from "./header/SearchLocation";
 export default function Header() {
   const [showFavModal, setShowFavModal] = useState(false);
 
-  function handleFavModal(value) {
-    // setShowFavModal(!showFavModal);
-    setShowFavModal(value);
+  function handleFavModal() {
+    setShowFavModal(!showFavModal);
+
     // console.log(value);
   }
 

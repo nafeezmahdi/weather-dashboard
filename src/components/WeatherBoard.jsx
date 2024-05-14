@@ -2,7 +2,7 @@ import { useContext } from "react";
 import AddToFavorite from "./weather/AddToFavorite";
 import WeatherCondition from "./weather/WeatherCondition";
 import WeatherHeadline from "./weather/WeatherHeadline";
-import { WeatherContext } from "../context/contextIndex";
+import { WeatherContext } from "../context/contextIndex.js";
 
 export default function WeatherBoard() {
   const { loading } = useContext(WeatherContext);
