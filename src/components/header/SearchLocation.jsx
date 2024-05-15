@@ -9,9 +9,9 @@ export default function SearchLocation() {
 
   function handleSubmit(evnt) {
     evnt.preventDefault();
-    console.log(searchTerm);
+    // console.log(searchTerm);
     const fetchedLocation = getLocationByName(searchTerm);
-    console.log(fetchedLocation);
+    // console.log(fetchedLocation);
     setSelectedLocation({ ...fetchedLocation });
   }
 

@@ -22,7 +22,7 @@ export default function useWeather() {
   //
   const [loading, setLoading] = useState({
     state: false,
-    message: "",
+    message: "Finding Location....",
   });
   //
   const [error, setError] = useState(null);
@@ -76,8 +76,9 @@ export default function useWeather() {
 
   useEffect(() => {
     setLoading({
+      ...loading,
       state: true,
-      message: "Fetching Weather Data...!",
+      message: "Finding Location...",
     });
     if (selectedLocation.latitude && selectedLocation.longitude) {
       fetchWeatherData(selectedLocation.latitude, selectedLocation.longitude);
