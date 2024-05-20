@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import WeatherBoard from "./components/WeatherBoard";
 import { WeatherContext } from "./context/contextIndex";
 import { getBackgroundImage } from "./utils/getBackgroundImage";
+import Footer from "./components/Footer";
 
 export default function Page() {
   const { weatherData, loading } = useContext(WeatherContext);
@@ -29,6 +30,7 @@ export default function Page() {
               <WeatherBoard />
             </section>
           </main>
+          <Footer />
         </div>
       )}
     </>
